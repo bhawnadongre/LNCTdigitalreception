@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(223, 242, 247, 0.5);
+  height: 100%;
+  margin: 0;
+}
+header{
+  background-color: black;
+}
+.header2{
+  text-align: center;
+  font-size: xx-large;
+  color: #eaeaea;
+  justify-content: center;
+}
+.logo{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+  .nav{
+    
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    
+    
+  }
+  #collegewebsite{
+    padding: 10px;
+  }
+  #accsoft{
+    padding-left: 20px;
+  }
+  #rgpv{
+    padding-left: 20px;
+  }
+  #contactNo{
+    padding-left: 20px;
+  }
+
+span {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color:#eceff1;
+  margin: 0 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border-top-right-radius: 0;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  background-color: rgb(199, 235, 223);
+}
+
+.chat {
+  height: 500px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.chat-header {
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+  color: #666;
+}
+::-webkit-input-placeholder {
+  color: 0.711;
+}
+
+input {
+  border: 0;
+  padding: 10px;
+  margin-left: auto;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #f0f0f0;
+  outline: none;
+}
+.inputContainer {
+  padding: 10px;
+  border-top: 1px solid #eaeaea;
+  width: 100%;
+  background: #fff;
+  display: flex;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  margin-left: 10px;
+  background: #1f819e;
+  color: #fff;
+  border-radius: 4px;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 90%;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 0;
+  border-radius: 4px;
+  padding-bottom: 40px;
+  scroll-behavior: smooth;
+}
+.userMessage {
+  background: #1f819e;
+  color: #fff;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+}
+
+#bot {
+  margin-left: auto;
+}
+
+.bot {
+  font-family: Consolas, "Courier New", Menlo, source-code-pro, Monaco,
+    monospace;
+}
+
+.avatar {
+  height: 30px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+}
+
+.response {
+  display: flex;
+  margin: 1%;
+  width: auto;
+  max-width: 48%;
+}
+.menu-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 200px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .chat {
+    height: 100vh;
+    width: 80vh;
+  }
+  .nav {
+    overflow: hidden;
+    padding: 10px;
+
+  }
+}
