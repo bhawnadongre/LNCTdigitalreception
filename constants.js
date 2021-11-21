@@ -61,7 +61,7 @@ const prompts = [
     "Information not present",
     "Sorry",
     "Try again",
-    "I don't understand :/"
+    "I don't understand"
   ]
   
   // Whatever else you want :)
